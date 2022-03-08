@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1F0343C927C909C900CB4B20 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0343C827C909C900CB4B20 /* Post.swift */; };
 		1F0343CB27C90AB300CB4B20 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0343CA27C90AB300CB4B20 /* InfoViewController.swift */; };
+		1F0343CE27C91C5300CB4B20 /* ProfileContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0343CD27C91C5300CB4B20 /* ProfileContainerView.swift */; };
+		1F27C73D27D756F500B1AD5D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27C73C27D756F500B1AD5D /* UIView+Extension.swift */; };
+		1F27C73F27D75B3800B1AD5D /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27C73E27D75B3800B1AD5D /* ProfileHeaderView.swift */; };
 		1F72713527A8287100FCF1D3 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F72713427A8287100FCF1D3 /* FeedViewController.swift */; };
 		1F72713727A8295400FCF1D3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F72713627A8295400FCF1D3 /* ProfileViewController.swift */; };
 		1F72713927AC0AE900FCF1D3 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F72713827AC0AE900FCF1D3 /* PostViewController.swift */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		1F0343C827C909C900CB4B20 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		1F0343CA27C90AB300CB4B20 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		1F0343CD27C91C5300CB4B20 /* ProfileContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileContainerView.swift; sourceTree = "<group>"; };
+		1F27C73C27D756F500B1AD5D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1F27C73E27D75B3800B1AD5D /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		1F72713427A8287100FCF1D3 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		1F72713627A8295400FCF1D3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1F72713827AC0AE900FCF1D3 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0343CC27C91AB800CB4B20 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1F72713627A8295400FCF1D3 /* ProfileViewController.swift */,
+				1F0343CD27C91C5300CB4B20 /* ProfileContainerView.swift */,
+				1F27C73E27D75B3800B1AD5D /* ProfileHeaderView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		1FEBADA827904DC6003AA272 = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +78,13 @@
 		1FEBADB327904DC6003AA272 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				1F0343C827C909C900CB4B20 /* Post.swift */,
 				1FEBADB427904DC6003AA272 /* AppDelegate.swift */,
 				1FEBADB627904DC6003AA272 /* SceneDelegate.swift */,
 				1F72713427A8287100FCF1D3 /* FeedViewController.swift */,
-				1F72713627A8295400FCF1D3 /* ProfileViewController.swift */,
+				1F0343C827C909C900CB4B20 /* Post.swift */,
+				1F0343CC27C91AB800CB4B20 /* Profile */,
 				1F72713827AC0AE900FCF1D3 /* PostViewController.swift */,
+				1F27C73C27D756F500B1AD5D /* UIView+Extension.swift */,
 				1F0343CA27C90AB300CB4B20 /* InfoViewController.swift */,
 				1FEBADBD27904DCA003AA272 /* Assets.xcassets */,
 				1FEBADBF27904DCA003AA272 /* LaunchScreen.storyboard */,
@@ -148,10 +165,13 @@
 				1F72713927AC0AE900FCF1D3 /* PostViewController.swift in Sources */,
 				1FEBADB527904DC6003AA272 /* AppDelegate.swift in Sources */,
 				1F72713727A8295400FCF1D3 /* ProfileViewController.swift in Sources */,
+				1F27C73D27D756F500B1AD5D /* UIView+Extension.swift in Sources */,
 				1F72713527A8287100FCF1D3 /* FeedViewController.swift in Sources */,
 				1F0343C927C909C900CB4B20 /* Post.swift in Sources */,
 				1F0343CB27C90AB300CB4B20 /* InfoViewController.swift in Sources */,
+				1F27C73F27D75B3800B1AD5D /* ProfileHeaderView.swift in Sources */,
 				1FEBADB727904DC6003AA272 /* SceneDelegate.swift in Sources */,
+				1F0343CE27C91C5300CB4B20 /* ProfileContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

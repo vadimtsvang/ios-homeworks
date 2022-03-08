@@ -10,20 +10,19 @@ import UIKit
 class PostViewController: UIViewController {
     
     var post: Post?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = post?.title
         view.backgroundColor = .brown
-
-        let barButton = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(tapInfo))
         
+        let barButton = UIBarButtonItem(barButtonSystemItem: .organize, target: self, action: #selector(tapInfo))
         navigationItem.rightBarButtonItem = barButton
-        }
-
-@objc func tapInfo() {
-    let vcInfo = InfoViewController()
-    self.present(vcInfo, animated: true, completion: nil)
+    }
+    
+    @objc func tapInfo() {
+        let vcInfo = InfoViewController()
+        present(vcInfo, animated: true, completion: nil)
     }
 }
 

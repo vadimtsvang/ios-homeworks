@@ -21,19 +21,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBarController = UITabBarController()
         
         let feedVC = FeedViewController()
-        feedVC.view.backgroundColor = .systemGreen
+        feedVC.view.backgroundColor = .magenta
         feedVC.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "doc.append.fill"), tag: 0)
         
         let profileVC = ProfileViewController()
-        profileVC.view.backgroundColor = .systemTeal
+        profileVC.view.backgroundColor = .lightGray
         profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.rectangle.fill"), tag: 1)
         
         let feedNC = UINavigationController(rootViewController: feedVC)
-        
-        tabBarController.viewControllers = [feedNC, profileVC]
-        
+        let profileNC = UINavigationController(rootViewController: profileVC)
+        tabBarController.viewControllers = [feedNC, profileNC]
         
         window?.rootViewController = tabBarController
-        
     }
 }

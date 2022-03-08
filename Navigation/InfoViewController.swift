@@ -11,8 +11,11 @@ class InfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .black
-        
+        view.backgroundColor = .black
+        makeMoreButton()
+    }
+    
+    private func makeMoreButton() {
         let button = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 50))
         button.setTitle("One more time", for: .normal)
         view.addSubview(button)
@@ -28,13 +31,8 @@ class InfoViewController: UIViewController {
         let actionTwo = UIAlertAction(title: "Cancel", style: .cancel) { actionTap in
             print("CancelAction")
         }
-        //(title: "Cancel", style: .cancel, handler: nil)
         vcAlert.addAction(action)
         vcAlert.addAction(actionTwo)
-        self.present(vcAlert, animated: true, completion: nil)
-
+        present(vcAlert, animated: true, completion: nil)
     }
-    
-
-    
 }
