@@ -24,13 +24,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         feedVC.view.backgroundColor = .magenta
         feedVC.tabBarItem = UITabBarItem(title: "Feed", image: UIImage(systemName: "doc.append.fill"), tag: 0)
         
-        let profileVC = ProfileViewController()
-        profileVC.view.backgroundColor = .lightGray
-        profileVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.rectangle.fill"), tag: 1)
+        let loginVC = LogInViewController()
+        loginVC.view.backgroundColor = .lightGray
+        loginVC.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.crop.rectangle.fill"), tag: 1)
         
         let feedNC = UINavigationController(rootViewController: feedVC)
-        let profileNC = UINavigationController(rootViewController: profileVC)
-        tabBarController.viewControllers = [feedNC, profileNC]
+        let loginNC = UINavigationController(rootViewController: loginVC)
+        loginNC.navigationBar.isHidden = true
+        tabBarController.viewControllers = [feedNC, loginNC]
         
         window?.rootViewController = tabBarController
     }

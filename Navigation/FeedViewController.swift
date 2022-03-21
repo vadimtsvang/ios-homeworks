@@ -9,7 +9,7 @@ import UIKit
 
 class FeedViewController: UIViewController {
     
-   let post = Post(title: "POST")
+ //  let post = Post(title: "POST")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class FeedViewController: UIViewController {
     
     @objc func nextTap() {
         let vc = PostViewController()
-        vc.post = post
+      //  vc.post = post
         navigationController?.pushViewController(vc, animated: true)
     }
 }
